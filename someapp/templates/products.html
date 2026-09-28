@@ -1,0 +1,9 @@
+<h3>Товары</h3>
+{% for p in products %}
+    <p>{{ p.name }} стоит - {{ p.price }} создает - {{ p.manufacturer.name }}</p>
+{% endfor %}
+
+<h3>Производители</h3>
+{% for m in manufacturers %}
+    <p>{{ m.name }} из {{ m.country }}</p>
+{% endfor %}
